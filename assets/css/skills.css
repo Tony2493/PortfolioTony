@@ -1,0 +1,45 @@
+#skills {
+    background-color: var(--background-dark-green);
+    color: var(--color-text);
+    position:relative;
+}
+
+.skills__content {
+    padding: 8rem 0;
+}
+
+.skills__content .subtitle {
+    text-align: center;
+}
+
+.skills__content-grid {
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.progressbar-language {
+    justify-content: center;
+}
+
+.progressbar {
+    position: relative;
+    margin-top: 1.5rem;
+    width: 100%;
+    height: .6rem;
+    background-color: var(--color-text-dark);
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.fill-progressbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: .6rem;
+    background-color: var(--color-red);
+    border-radius: 10px;
+}
+
+.progressbar:hover {
+    transform: scale(1.05);
+}

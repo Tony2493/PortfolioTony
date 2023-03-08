@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+
+:root {
+    --background-dark-green: #256ece;
+    --background-light-green: #a7e753;
+    --color-text: #F7F7F7;     
+    --color-text-dark: #181823cc; 
+    --color-red: #f1e534;                             
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* animación de scroll */
+}
+
+body {
+    font-family: 'M PLUS 1p', sans-serif;
+    background-color: var(--background-light-green);
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-buttons {
+    justify-content: flex-start;
+    gap: 5rem;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.button {
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border: 2px solid var(--background-light-green);
+    border-radius: 1.8rem;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.button-light {
+    background-color: var(--background-light-green); 
+}
+
+.box-shadow {
+    box-shadow: 1px 1px 20px rgba(0,0,0,.5);
+}
+
+.wave {
+    background-image: url(../img/wave.svg);
+    background-size: 100% 100% !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.wave-inverted {
+    transform: rotateX(180deg);
+    top: 0;
+}
+
+@media screen and (max-width: 1150px) {
+    .wave {
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+    }
+    .wave-inverted {
+        background-position-y: top;
+    }
+}
